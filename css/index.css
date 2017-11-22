@@ -59,9 +59,11 @@ section {
 }
 
 .faq {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  /*display: flex;
+  justify-content: center;*/
+  /*flex-flow: row wrap;*/
+  /*display: block;*/
+  /*text-align: center;*/
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
@@ -71,12 +73,35 @@ section {
 
 
 .faq .title {
+  width: 100%;
+  text-align: center;
   margin-top: 2rem;
   font-weight: 300;
+  display: block;
+  margin-bottom: 2rem;
 }
 
 .faq .question {
   width: 100%;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.faq .question:not(:nth-of-type(4n+1)) {
+  margin-left: 5%
+}
+
+.faq .question span:first-child {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.faq .question span:not(:first-child) {
+  font-size: 0.85em;
+}
+
+.faq .question span {
+  display: block;
 }
 
 /* Desktop */
@@ -87,6 +112,6 @@ section {
     margin-right: 15%;
   }
   .faq .question {
-    width: 25%;
+    width: 20%;
   }
 }
