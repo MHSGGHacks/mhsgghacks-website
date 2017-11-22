@@ -67,7 +67,7 @@ section {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   /*background: linear-gradient(135deg, rgb(125, 190, 68), rgb(71, 113, 35));*/
 }
 
@@ -84,10 +84,15 @@ section {
 .faq .faq-row {
   width: 100%;
 }
+.faq .faq-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .faq .question {
   width: 100%;
-  display: inline-block;
+  display: block;
   margin-bottom: 2rem;
   float: left;
 }
@@ -116,6 +121,6 @@ section {
     width: 20%;
   }
   .faq .question:not(:nth-of-type(4n+1)) {
-    margin-left: 5%
+    margin-left: 1rem;
   }
 }
