@@ -24,9 +24,14 @@
 
 <body>
   <div class="topbar">
-
+    <div class="topbar-links">
+      <a href="#info">Information</a>
+      <a href="#faq">FAQ</a>
+      <a href="#history">History</a>
+      <a href="#apply">Apply</a>
+    </div>
   </div>
-  <section class="top-main">
+  <section class="top-main" id="info">
     <div class="bgvid">
       <video poster="res/thumbnail.png" autoplay loop muted>
         <source src="res/sq2.mp4" type="video/mp4"/>
@@ -36,7 +41,7 @@
     <br />
     <span class="title">Hacking with a twist | December 9th, 2017</span>
   </section>
-  <section class="faq-container">
+  <section class="faq-container" id="faq">
     <div class="faq">
       <span class="title">Frequently Asked Questions</span>
       <!-- TODO: Revise and cut -->
@@ -139,7 +144,7 @@
       </div>
     </div>
   </section>
-  <section class="timeline-container">
+  <section class="timeline-container" id="history">
     <div class="timeline">
       <div>
         <span class="title">2016</span>
@@ -155,7 +160,7 @@
       </div>
     </div>
   </section>
-  <section class="register-container">
+  <section class="register-container" id="apply">
     <div class="register">
       <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup">
@@ -244,7 +249,38 @@
       <!--End mc_embed_signup-->
     </div>
   </section>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- Misc -->
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top - $(".topbar").height()
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          // window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 </body>
 
 </html>
