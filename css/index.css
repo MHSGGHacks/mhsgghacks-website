@@ -58,7 +58,7 @@ section {
   font-family: "Noto Sans", sans-serif;
 }
 
-.faq-container {
+.faq-container, .register-container {
     width: 100%;
     background: linear-gradient(135deg, #fcfcfc 0%,#e0e0e0 100%)
 }
@@ -143,6 +143,7 @@ section {
   float: left;
   /*padding: 5%;*/
   width: 100%;
+  padding: 0 10%;
   margin: 1.5rem 0;
 }
 
@@ -150,6 +151,16 @@ section {
   display: block;
   text-align: center;
   color: white;
+}
+
+.register-container {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.register {
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* Medium */
@@ -181,8 +192,8 @@ section {
     margin-left: 1rem;
   }
   .timeline > div {
-    width: 23%;
-    padding: 5%;
+    width: 33%;
+    padding: 5% 7.5%;
     margin: auto;
   }
 }
