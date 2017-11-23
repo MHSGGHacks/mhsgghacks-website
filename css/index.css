@@ -110,6 +110,11 @@ section {
   /*float: left;*/
 }
 
+.faq .google-map iframe {
+  height: 100%;
+  width: 100%;
+}
+
 .faq .question span:first-child {
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -165,12 +170,14 @@ section {
 
 .topbar {
   height: 50px;
+  box-shadow: black 0 0 20px 0;
 }
 
 .topbar-links {
   margin: 0;
   padding: 0;
   float: right;
+  visibility: hidden;
 }
 
 .topbar-links a {
@@ -197,11 +204,17 @@ section {
   .faq .question {
     width: 40%;
   }
+  /*.faq .google-map {
+    width: 40%;
+  }*/
   .faq .question:not(:nth-of-type(2n+1)) {
     margin-left: 1rem;
   }
   .topbar {
     height: 64px;
+  }
+  .topbar-links {
+    visibility: visible;
   }
   .topbar-links a {
     line-height: 64px;
@@ -217,6 +230,9 @@ section {
   }
   .faq .question {
     width: 22.5%;
+  }
+  .faq .google-map {
+    width: 45%;
   }
   .faq .question:not(:nth-of-type(4n+1)) {
     margin-left: 1rem;
