@@ -132,7 +132,7 @@ section {
 
 .timeline-container {
   width: 100%;
-  background: linear-gradient(135deg, rgb(126, 68, 190), rgb(84, 42, 139));
+  background: linear-gradient(135deg, rgb(140, 90, 195), rgb(84, 42, 139));
 }
 
 .timeline {
@@ -212,19 +212,19 @@ section {
   .faq .question:not(:nth-of-type(2n+1)) {
     margin-left: 1rem;
   }
-  .topbar {
-    height: 64px;
-  }
   .topbar-links {
     visibility: visible;
-  }
-  .topbar-links a {
-    line-height: 64px;
   }
 }
 
 /* Desktop */
 @media only screen and (min-width:993px) {
+  .topbar {
+    height: 64px;
+  }
+  .topbar-links a {
+    line-height: 64px;
+  }
   .faq {
     width: 70%;
     margin-left: 15%;
