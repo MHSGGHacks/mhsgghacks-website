@@ -35,7 +35,8 @@ section {
   align-items: center;
   flex-flow: column;
   /*background: rgba(104, 160, 56, 0.75);*/
-  background: rgba(71, 113, 35, 0.85);
+  /*background: rgba(71, 113, 35, 0.85);*/
+  background: rgba(103, 58, 183, 0.85);
   overflow: hidden;
 }
 
@@ -131,7 +132,7 @@ section {
 
 .timeline-container {
   width: 100%;
-  background: linear-gradient(135deg, rgb(125, 190, 68), rgb(87, 139, 42));
+  background: linear-gradient(135deg, rgb(126, 68, 190), rgb(84, 42, 139));
 }
 
 .timeline {
