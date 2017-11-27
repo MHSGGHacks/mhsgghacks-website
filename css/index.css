@@ -109,7 +109,7 @@ section {
   vertical-align: top;
   text-align: left;
   line-height: 1.5;
-  /*float: left;*/
+  float: left;
 }
 
 .faq .google-map iframe {
@@ -234,7 +234,7 @@ section {
     width: 22.5%;
   }
   .faq .google-map {
-    width: 45%;
+    width: 70%;
   }
   .faq .question:not(:nth-of-type(4n+1)) {
     margin-left: 1rem;
