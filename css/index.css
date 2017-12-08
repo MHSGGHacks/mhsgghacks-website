@@ -205,10 +205,10 @@ section {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
-  /*padding-bottom: 2rem;*/
+  padding-bottom: 2rem;
 }
 
-.schedyle {
+.schedule table {
   border-collapse: collapse;
 }
 
