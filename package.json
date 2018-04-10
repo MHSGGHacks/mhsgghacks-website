@@ -1,0 +1,19 @@
+{
+  "name": "mhsgghacks-website",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MHSGGHacks/mhsgghacks-website.git"
+  },
+  "author": "David Shustin",
+  "bugs": {
+    "url": "https://github.com/MHSGGHacks/mhsgghacks-website/issues"
+  },
+  "homepage": "https://github.com/MHSGGHacks/mhsgghacks-website#readme"
+}
